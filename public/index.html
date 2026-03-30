@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <div class="header">
+        <span class="menu"><img src="./logo.png" width="50px" /></span>
+
+        <div class="location">
+          <h2 id="city">Rayagada</h2>
+          <p id="desc">Partly Cloudy</p>
+        </div>
+
+        <span class="search" id="location" style="font-size: 25px"
+          >&#128269;</span
+        >
+      </div>
+
+      <!-- Temperature -->
+      <div class="temp-section" id="mTop">
+        <h1 id="temp" id="mTop">23°</h1>
+
+        <!-- SVG Blob -->
+        <div class="blob">
+          <svg viewBox="0 0 200 200"></svg>
+          <img
+            id="icon"
+            src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+          />
+        </div>
+      </div>
+
+      <!-- Glass Card -->
+      <div class="searchBox glass" id="boxContainer">
+        <input
+          type="text"
+          id="input"
+          class="glass input"
+          placeholder="Enter City Name"
+        />
+        <button class="btn glass" id="button">Search</button>
+      </div>
+      <!-- info box  -->
+      <div class="details-card">
+        <div class="top-row cont">
+          <span id="now">Now</span>
+          <span id="tempSmall" class="big">23°</span>
+          <span id="emoji">
+            <img
+              id="sicon"
+              src="https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+              width="50px"
+            />
+          </span>
+        </div>
+
+        <div class="info">
+          <div class="cont">
+            <p>Wind</p>
+            <span id="wind">2 m/s</span>
+          </div>
+          <div class="cont">
+            <p>Humidity</p>
+            <span id="humidity">23%</span>
+          </div>
+          <div class="cont">
+            <p>SunRise</p>
+            <span id="sunrise">2 m/s</span>
+          </div>
+          <div class="cont">
+            <p>SunSet</p>
+            <span id="sunset">23%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

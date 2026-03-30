@@ -137,3 +137,17 @@ async function success(position) {
 function error() {
   alert("Location access denied ❌");
 }
+
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(() => console.log("Service Worker Registered ✅"))
+      .catch(err => console.log("SW error ❌", err));
+  });
+}
+
+// flash screen 
+window.addEventListener("load", () => {
+  document.getElementById("splash").style.display = "none";
+});

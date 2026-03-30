@@ -95,7 +95,7 @@ body {
 
 /* Glass Card */
 .details-card {
-  height: 185px;
+  height: 180px;
   position: relative;
   bottom: -30px;
   padding: 20px;
@@ -180,7 +180,7 @@ body {
     width: 200px;
   }
   .details-card {
-    height: 200px;
+    height: 190px;
   }
 }
 
